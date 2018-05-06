@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/PLATYPUSCO007/eis_201801c_tp_grupal.svg?branch=master)](https://travis-ci.org/PLATYPUSCO007/eis_201801c_tp_grupal)
 ## Objetivos del TP grupal
 Ejercitar la escritura de código en ambientes colaborativos utilizando una metodología de diseño guiada por pruebas ejecutanto un flujo de trabajo que facilite la integración frecuente de código.
 
@@ -11,12 +12,12 @@ Ejercitar la escritura de código en ambientes colaborativos utilizando una meto
 
 ### Integrantes
 
-Nro | Nombre | Legajo | Mail
-----|--------|--------|------
-1   |        |        |
-2   |        |        |
-3   |        |        |
-4   |        |        |
+Nro |    Nombre     | Legajo | Mail
+----|---------------|--------|------
+1   |William Enciso |        |william.enciso@cun.edu.co
+2   |               |        |
+3   |               |        |
+4   |               |        |
     
 ### Entrega
 
