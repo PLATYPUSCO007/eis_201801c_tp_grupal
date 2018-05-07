@@ -15,7 +15,7 @@ Ejercitar la escritura de código en ambientes colaborativos utilizando una meto
 Nro |    Nombre     | Legajo | Mail
 ----|---------------|--------|------
 1   |William Enciso |        |william.enciso@cun.edu.co
-2   |               |        |
+2   |Sergio Guzman  |        |sergioluke35@gmail.com
 3   |               |        |
 4   |               |        |
     
