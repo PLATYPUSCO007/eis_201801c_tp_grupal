@@ -7,3 +7,9 @@ Feature: Gradle-Cucumber integration
     Given an initial state of pacman
     When pacman eat a biscuit
     Then will become fatter
+
+
+  Scenario: Eat a fruit and win points
+    Given an initial state of pacman
+    When pacman eat a fruit
+    Then will become fatter

@@ -8,11 +8,14 @@ import org.assertj.core.api.Assertions;
 import org.junit.Assert;
 import org.junit.Before;
 
+import javax.swing.*;
 import java.awt.*;
 
 public class BasicStepdefs {
 
-    private VideoGame videogame;
+    Pacman pacman;
+    Videogame biscuit;
+    Videogame fruit;
 
     @When("^I run a failing step")
     public void I_run_a_failing_step() throws Throwable {
@@ -21,18 +24,25 @@ public class BasicStepdefs {
 
     @Given("^an initial state of pacman$")
     public void an_initial_state_of_pacman() {
-        videogame = new VideoGame();
-        videogame.SetScore(0);
+        pacman = new Pacman();
+        pacman.SetPoints(5);
     }
 
     @When("^pacman eat a biscuit$")
     public void pacman_eat_a_biscuit() {
-        videogame.EatBiscuit(true);
+        biscuit = new Videogame();
+       pacman.SetEatBonus("biscuit");
+    }
+
+    @When("^pacman eat a fruit$")
+    public void pacman_eat_a_fruit() {
+        fruit = new Videogame();
+        pacman.SetEatBonus("fruit");
     }
 
     @Then("^will become fatter$")
     public void will_become_fatter() {
-        Assertions.assertThat(videogame.GetScore()).isGreaterThan(videogame.Getpoints());
+        Assertions.assertThat(pacman.GetScore()).isGreaterThan(pacman.GetPoints());
     }
 }
 
