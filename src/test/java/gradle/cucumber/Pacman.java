@@ -9,8 +9,12 @@ public class Pacman{
 
     public void SetEat(Videogame videogame) {
         Videogame videogames = new Videogame(videogame);
-        points+=videogames.FatterBiscuit();
-        points+=videogames.FatterFruit();
+        points=videogames.FatterBiscuit();
+    }
+
+    public void SetEat2(Videogame videogame) {
+        Videogame videogames = new Videogame(videogame);
+        points=videogames.FatterFruit();
     }
 
     public int GetPoints(){
@@ -22,7 +26,7 @@ public class Pacman{
         phantoms.kill();
     }
 
-    private int points;
+    private int points=0;
 
 }
 

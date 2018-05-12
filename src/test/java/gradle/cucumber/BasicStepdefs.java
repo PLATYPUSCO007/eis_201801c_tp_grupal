@@ -56,12 +56,12 @@ public class BasicStepdefs {
     @When("^pacman eat a fruit$")
     public void pacman_eat_a_fruit() {
         fruit = new Videogame();
-        pacman.SetEat(fruit);
+        pacman.SetEat2(fruit);
     }
 
     @Then("^will become most fatter$")
     public void will_become_most_fatter() {
-        assertThat(pacman.GetPoints()).isEqualTo(3);
+        assertThat(pacman.GetPoints()).isEqualTo(2);
     }
 
 
