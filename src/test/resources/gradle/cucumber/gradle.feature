@@ -12,4 +12,11 @@ Feature: Gradle-Cucumber integration
   Scenario: Eat a fruit and win points
     Given an initial state of pacman
     When pacman eat a fruit
-    Then will become fatter
+    Then will become most fatter
+
+  Scenario: Crash with a phantom and die
+    Given a life(s)
+    When pac man crash with a phantom
+    Then will be die
+
+  
