@@ -2,10 +2,12 @@ package gradle.cucumber;
 
 public class Pacman{
 
+    private int points=0;
+    private Videogame videogame;
+    private Phantom phantom;
 
     public Pacman(){
     }
-
 
     public void SetEat(Videogame videogame) {
         Videogame videogames = new Videogame(videogame);
@@ -26,7 +28,8 @@ public class Pacman{
         phantoms.kill();
     }
 
-    private int points=0;
-
+    public void SetEat3(Phantom phantom) {
+        phantom.SetWeak(true);
+    }
 }
 

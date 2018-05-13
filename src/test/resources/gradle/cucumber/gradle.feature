@@ -19,4 +19,7 @@ Feature: Gradle-Cucumber integration
     When pac man crash with a phantom
     Then will be die
 
-  
+  Scenario: Pac man eat a pellet and the phantom be weaken
+    Given an initial state of pac man
+    When pac man eat a pellet
+    Then the phantoms be weaken

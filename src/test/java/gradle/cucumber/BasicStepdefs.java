@@ -4,6 +4,7 @@ import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import cucumber.api.java.en.And;
 import org.assertj.core.api.AssertDelegateTarget;
 import org.assertj.core.api.Assertions;
 import org.junit.Assert;
@@ -23,6 +24,7 @@ public class BasicStepdefs {
     Phantom phantom;
     Videogame biscuit;
     Videogame fruit;
+    Phantom pellet;
 
     @When("^I run a failing step")
     public void I_run_a_failing_step() throws Throwable {
@@ -82,6 +84,24 @@ public class BasicStepdefs {
     @Then("^will be die$")
     public void will_be_die() {
         assertThat(phantom.kill()).isNull();
+    }
+
+    //Test #4
+
+    @Given("^an initial state of pac man$")
+    public void an_initial_state_of_pac_man() {
+        pacman = new Pacman();
+    }
+
+    @When("^pac man eat a pellet$")
+    public void pac_man_eat_a_pellet() {
+        pellet = new Phantom();
+        pacman.SetEat3(pellet);
+    }
+
+    @Then("^the phantoms be weaken$")
+    public void the_phantoms_be_weaken() {
+        assertThat(pellet.GetWeak()).isTrue();
     }
 
 }
