@@ -10,10 +10,12 @@ public class pacmanEatFruitAndFatter {
 
     Pacman pacman;
     Fruit fruit;
+    Game game;
 
     @Given("^an pac man and a fruit$")
     public void an_pac_man_and_a_fruit() {
-        pacman = new Pacman();
+        game = new Game();
+        pacman = new Pacman(game);
         fruit = new Fruit();
     }
 

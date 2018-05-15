@@ -8,13 +8,14 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 
 public class pacmanEatBiscuitAndFatter {
-
+    Game game;
     Pacman pacman;
     Biscuit biscuit;
 
     @Given("^an pac man and a biscuit$")
     public void an_pac_man_and_a_biscuit() {
-        pacman = new Pacman();
+
+        pacman = new Pacman(game);
         biscuit = new Biscuit();
     }
 
