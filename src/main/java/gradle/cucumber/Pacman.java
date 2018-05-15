@@ -29,8 +29,11 @@ public class Pacman {
         this.life=life;
     }
 
-    public void crash(Phantom phantom) {
-        life-=phantom.kill();
+    public void crash(Phantom phantom){
+       if (phantom.isWeak())
+         phantom.removeBody();
+       else
+         life-=phantom.kill();
     }
 
     public int getLife() {
