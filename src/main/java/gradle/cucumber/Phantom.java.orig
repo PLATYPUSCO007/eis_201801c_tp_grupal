@@ -1,6 +1,7 @@
 package gradle.cucumber;
 
 public class Phantom {
+<<<<<<< HEAD
     private Boolean weak = false;
 
     public void weak() {
@@ -9,9 +10,11 @@ public class Phantom {
 
     public boolean isWeak() {
         return weak;
-    }
-    
-	public int kill() {
+=======
+
+
+    public int kill() {
         return 1;
+>>>>>>> refs/remotes/origin/master
     }
 }

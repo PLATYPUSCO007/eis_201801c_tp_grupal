@@ -1,13 +1,9 @@
 package gradle.cucumber;
 
 public class Pacman {
-	public Game game;
+
     public int point=0;
     public int life=0;
-    
-	public Pacman(Game game) {
-        this.game = game;
-    }
 
     public void eat(Biscuit biscuit) {
         point+=biscuit.getPoint();
@@ -21,10 +17,6 @@ public class Pacman {
         return point;
     }
 
-    public void eat(Pallet pallet) {
-        game.getPhantoms().forEach(f -> f.weak());
-    }
-
     public void life(int life) {
         this.life=life;
     }
@@ -35,6 +27,5 @@ public class Pacman {
 
     public int getLife() {
         return life;
-
     }
 }
