@@ -8,13 +8,14 @@ import junit.framework.TestCase;
 import org.junit.Assert;
 
 public class pacmanCrashWithaPhantomAndDie {
-
+    Game game;
     Pacman pacman;
     Phantom phantom;
 
     @Given("^a Pac man with life\\(s\\)$")
     public void a_Pac_man_with_life_s() {
-        pacman = new Pacman();
+        game = new Game();
+        pacman = new Pacman(game);
         pacman.life(2);
     }
 
