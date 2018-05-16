@@ -30,11 +30,18 @@ public class Pacman {
     }
 
     public void crash(Phantom phantom){
-       if (phantom.isWeak())
-         phantom.removeBody();
-       else
-         life-=phantom.kill();
+
+	    if (!phantom.isntBody())
+	        crashWithPhantom(phantom);
     }
+
+    private void crashWithPhantom(Phantom phantom) {
+        if (phantom.isWeak())
+            phantom.removeBody();
+
+        else
+            life-=phantom.kill();
+	}
 
     public int getLife() {
         return life;
