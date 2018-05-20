@@ -10,6 +10,17 @@ Ejercitar la escritura de código en ambientes colaborativos utilizando una meto
 4. Generar el modelo tal que cumpla con las _Pruebas de Aceptación_ para el problema listado en la próxima sección (_Pacman_).
 5. Completar tados de los integrantes del grupo utilizando este archivo (```README.md```)
 
+### Feedback
+
+- [X] (1) Ok. 
+- [X] (2) **Nombres de branchs poco representativos**.
+- [ ] (3) **No se puede evaluar porque no se ejecutaban las pruebas de aceptación.**
+- [X] (4) Ok.
+- [X] (5) Ok.
+
+NOTA: 6.
+
+
 ### Integrantes
 
 Nro |    Nombre     | Legajo | Mail
